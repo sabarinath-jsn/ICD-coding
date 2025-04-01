@@ -42,8 +42,8 @@ def load_models():
     bert_model = AutoModel.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
     
     # Load spaCy with negation
-    nlp = spacy.load("en_core_web_sm")
-    ts = termset("en_clinical")
+    nlp = spacy.load("en_core_web_sm", exclude=["parser"])
+    ts = termset("en_clinical_sensitive") 
     nlp.add_pipe("negex", config={"neg_termset": ts.get_patterns()})
     
     # Load label encoders
