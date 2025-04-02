@@ -1,10 +1,16 @@
-streamlit>=1.28.0
-torch>=2.0.0
-transformers>=4.30.0
-scikit-learn>=1.2.0
-spacy>=3.5.0,<4.0.0
-negspacy==1.0.4  
-joblib>=1.2.0
-numpy>=1.24.0
-gdown>=4.6.0
-python-dotenv>=1.0.0
+streamlit==1.12.2
+torch==1.13.1
+transformers==4.26.1
+numpy==1.24.2
+pandas==1.5.3
+scikit-learn==1.2.1
+scipy==1.10.0
+spacy==3.5.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+negspacy==1.0.5
+joblib==1.2.0
+lime==0.2.0.1
+matplotlib==3.7.0
+seaborn==0.12.2
+tqdm==4.65.0
+requests==2.31.0
